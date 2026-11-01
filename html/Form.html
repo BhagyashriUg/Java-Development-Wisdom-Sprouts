@@ -1,24 +1,148 @@
-<!DOCTYPE>
 <html>
     <head>
-        <title>From</title>
+        <title>Form1</title>
+        <style>
+            
+            .c1{
+                border: 1px solid black;
+                border-radius: 30px;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+                width: 770px;
+                height: 1600px;
+                margin-left: 300px;  
+                h1{
+                    margin-top: 40px;
+                    text-align: center
+                }
+                label{
+                    margin-left: 30px;
+                    font-weight: bold;
+                }
+                input{
+                    margin-top: 5px;
+                    margin-bottom: 20px;
+                    margin-left: 30px;
+                    width: 700px;
+                    height: 40px;
+                }
+                #file1{
+                    margin-top: 15px;
+                    width: 700px;
+                    height: 40px;
+                    border: 1px solid black;
+                    padding: 10px;
+                }
+
+                
+                
+                #addressbox{
+                    height: 70px;
+                    padding-bottom: 30px;
+                    
+                }
+                #submitButton,#ResetButton{
+                    width: 80px;
+                    height: 50px;
+                    border-radius: 10px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 15px;
+                    background-color: limegreen;
+                    
+                }
+                #ResetButton{
+                    background-color: red;
+                    margin-left: 550px;
+                    margin-left: 540px;
+                }
+                #colorbox{
+                    height: 15px;
+                    padding: 15px;
+                }
+                .radio1,.check1{
+                    height: 10px;
+                    width: 15px;
+                }
+                #select1{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    margin-left: 30px;
+                    width: 700px;
+                    height: 30px;
+                }
+                
+            }
+        </style>
     </head>
     <body>
-        <form>
-            <label for="NameInput">Enter Your Name : </label>
-            <input type="text" id="NameInput" placeholder="Eg. Joe Potter">
-            <br>
-            <label for="AgeInput">Enter Age : </label>
-            <input type="number" id="AgeInput">
-            <br>
-            <label for="">Enter Your DOB : </label>
-            <input type="date">
-            <br>
-            <label for="">Appointment</label>
-            <input type="datetime">
-            <br>
-            <label for="">Upload File : </label>
-            <input type="file">
-        </form>
+        <div class="c1">
+            <form>
+                <h1>Form</h1>
+                <label>Name :</label><br>
+                <input type="text" placeholder="Enter Your Name"><br>
+                
+                
+                
+                
+                <label>Mobile Number :</label><br>
+                <input type="tel" placeholder="Enter Your Mobile No."><br>
+                
+                <label>Email :</label><br>
+                <input type="email" placeholder="Enter Your Email"><br>
+                
+                <label>Password :</label><br>
+                <input type="password" placeholder="Enter Password"><br>
+                
+                <label>Date Of Birth :</label><br>
+                <input type="date"><br>
+                
+                <label>Time :</label><br>
+                <input type="time"><br>
+                
+                <label>Choose Your Favourite Color</label><br>
+                <input type="color" id="colorbox"><br>
+                
+                <label>Experience Level :</label><br>
+                <input type="range"><br>
+                <label>Upload Your Resume :</label><br>
+                <input type="file" id="file1"><br>
+                
+                
+                <label>Gender</label><br>
+                <input type="radio" name="gender" class="radio1" >Male
+                <input type="radio" name="gender" class="radio1">Female
+                <input type="radio" name="gender" class="radio1">Other
+                <br>
+                <label>Skills :</label><br>
+                <input type="checkbox" class="check1">HTML
+                <input type="checkbox" class="check1">CSS
+                <input type="checkbox" class="check1">JAVASCRIPT
+                <br>
+                
+                
+                <label>City :</label><br>
+                <select id=select1>
+                    <option>Pune</option>
+                    <option>Mumbai</option>
+                    <option>Nashik</option>
+                    
+                </select>
+                
+                
+                <label>Portfolio Website :</label><br>
+                <input type="url" placeholder="https://example.com"><br>
+                <label>Search :</label><br>
+                <input type="search" placeholder="123-456-7890"><br>
+                <label>Joining Month</label><br>
+                <input type="month"><br>
+                <label>Select Week :</label><br>
+                <input type="week"><br>
+                <label>Address :</label><br>
+                <input type="text" placeholder="Enter Your address" id="addressbox">
+                <br>
+                <input type="submit" id="submitButton">
+                <input type="reset" id="ResetButton">
+             </form>
+        </div>
     </body>
 </html>
